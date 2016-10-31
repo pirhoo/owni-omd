@@ -1,0 +1,279 @@
+
+/** Stylesheet
+*   @author Pierre Romera - pierre.romera@gmail.com
+*   @desc
+*/
+
+body {
+    padding:0px;
+    margin:0px;
+    background:#666;
+    font-family: Verdana;
+}
+
+a img {
+    border:0px;
+}
+
+#app {
+    width:990px;
+    height:667px;
+    
+    padding:0px;
+    margin:0px;
+
+}
+
+#workspace {
+    background:url("./img/bg.png") center top no-repeat white;
+    height:667px;
+}
+
+#overflow {
+    height:667px;
+    width:990px;
+}
+
+#mask {
+    height:667px;
+    width:990px;
+    margin-top:-667px;
+    background: url("img/mask.png");
+
+    position:relative;
+    z-index:799;
+
+    display:none;
+}
+
+#footer {
+    height:35px;
+    padding:10px;
+    background: url('img/share.png') repeat-x #966308;
+    margin-top:-55px;
+}
+
+.popup {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:260px;
+    padding:20px;
+    background: url('img/bg-popup.png');
+    color:white;
+    display:none;
+}
+
+
+.popup h2 {
+    font-size:18px;
+    text-transform: uppercase;
+    margin:0px;
+    margin-bottom:5px;
+    padding:0px;
+    text-align: center;
+}
+
+.popup .url {
+    text-align:right;
+    margin:0px;
+    padding:0px;
+}
+
+.popup .url a {
+    font-weight:bold;
+    font-size:16px;
+    text-decoration:underline;
+    color:white;
+}
+
+
+.popup .chiffre {
+    font-size:20px;
+    margin:0px;
+    margin-bottom:5px;
+    padding:0px;
+    text-align: center;
+    color:#ffcc00;
+}
+
+.popup .brief p {
+    margin:0px;
+    margin-bottom:5px;
+    padding:0px;
+    text-align:left;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.togglers {
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:0px;
+    height:0px;
+}
+
+.toggleObjet {
+    cursor:pointer;
+}
+
+
+.showFooter {
+    display:none;
+}
+
+.showFooter .trigger {
+    height:66px;
+    margin-top:-36px;
+    margin-right:10px;
+    float:right;
+}
+
+.powered {
+    display:block;
+    float:left;
+}
+
+.copier {
+    padding:2px;
+    font-weight:bold;
+    top:-2px;
+    position:relative;
+    font-size:15px;
+}
+
+.copierTitle {
+    margin-left:-40px;
+    margin-top:5px;
+}
+
+.like {
+
+    height:17px;
+    padding:10px;
+    top:-2px;
+    margin-left:20px;
+    float:left;
+
+    background:white;
+
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -khtml-border-radius:20px;
+
+}
+
+.sharing {
+    
+    height:17px;
+    padding:10px;
+    top:-2px;
+    float:right;
+    
+    background:white;
+
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -khtml-border-radius:20px;
+    
+}
+
+
+.sharing a, .sharing .share{
+   font-size:12px;
+   color:gray;
+   text-decoration:none;
+   float:right;
+   margin-right:5px;
+}
+
+.sharing .bg-white {
+    background:white;
+    padding:1px 2px;
+    padding-bottom:0px;
+    height:17px;
+    
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -khtml-border-radius:3px;
+
+    border:1px solid silver;
+}
+
+.sharing a img{
+    border:0px;
+    margin:0px;
+    padding:0px;
+}
+
+.inputEmbed {
+    display:none;
+    width:600px;
+    padding:10px;
+    z-index:999;
+    text-align:center;
+    font-size:20px;
+    color:white;
+    font-family: Verdana;
+    text-shadow:0px 0px 4px #000;
+}
+
+
+.inputEmbed input.text {
+    border:silver 1px solid;
+    font-size:20px;
+    padding:2px;
+    width:400px;
+    color:white;
+    background: black;
+    margin-top:5px;
+}
+
+.hiddenTitle {
+    position:absolute;
+    top:0px;
+    z-index:4000;
+
+    background:#000;
+    display:block;
+    color:#ddd;
+    padding:5px;
+
+    box-shadow: gray 0px 3px 15px;
+    -moz-box-shadow: gray 0px 3px 15px;
+    -webkit-box-shadow: gray 0px 3px 15px;
+    -khtml-box-shadow: gray 0px 3px 15px;
+
+
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -khtml-border-radius:10px;
+
+    display:none;
+    font-weight:bold;
+    font-size:0.8em;
+
+    font-family: Verdana;
+}
+
+.hiddenTitle:after {
+    display:block;
+    float:left;
+    position:relative;
+    bottom:-20px;
+    left:5px;
+    content:url("./img/bottomHiddenTitle.png");
+    height:0px;
+    width:0px;
+}
+
+.hiddenTitle.shareTitle {
+    margin:0px;
+    margin-top:10px;
+    margin-left:-30px;
+}
